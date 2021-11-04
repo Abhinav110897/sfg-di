@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed6ae523-646a-48b1-90bb-3dbb7cdde8c2" name="Changes" comment="Life Cycle demo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springframework/pets/PetServiceFactory.java" afterDir="false" />
+    <list default="true" id="ed6ae523-646a-48b1-90bb-3dbb7cdde8c2" name="Changes" comment="Adding factory beans">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sfgdi-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springframework/pets/CatPetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springframework/pets/CatPetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springframework/pets/DogPetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springframework/pets/DogPetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/SfgDiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/SfgDiApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/config/GreetingServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/config/GreetingServiceConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636018947419</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding factory beans">
+      <created>1636019903365</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1636019903365</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +132,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Life Cycle demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Life Cycle demo" />
+    <MESSAGE value="Adding factory beans" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding factory beans" />
   </component>
 </project>
