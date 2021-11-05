@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed6ae523-646a-48b1-90bb-3dbb7cdde8c2" name="Changes" comment="Adding factory beans">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sfgdi-config.xml" afterDir="false" />
+    <list default="true" id="ed6ae523-646a-48b1-90bb-3dbb7cdde8c2" name="Changes" comment="XML Config example">
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/datasource/FakeDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/services/PrototypeBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/services/SingletonBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/SfgDiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/SfgDiApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/config/GreetingServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/config/GreetingServiceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +46,12 @@
   </component>
   <component name="RunManager">
     <configuration name="SfgDiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="GURU_USERNAME" value="UserFromEnvVar!" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="guru.springframework.sfgdi.SfgDiApplication" />
       <module name="life-cycle-demo" />
+      <option name="PROGRAM_PARAMETERS" value="--guru.password=PwdFromCmdLine --guru.username=UserFromCmdLine  " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="guru.springframework.sfgdi.*" />
@@ -115,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636019903365</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="XML Config example">
+      <created>1636021049315</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1636021049315</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,6 +148,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Life Cycle demo" />
     <MESSAGE value="Adding factory beans" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding factory beans" />
+    <MESSAGE value="XML Config example" />
+    <option name="LAST_COMMIT_MESSAGE" value="XML Config example" />
   </component>
 </project>
