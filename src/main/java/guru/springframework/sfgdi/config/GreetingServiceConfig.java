@@ -70,7 +70,8 @@ public class GreetingServiceConfig {
         return petServiceFactory.getPetService("cat");
     }
 
-    @Bean
+    //commenting as we have done properties binding in SfgConfiguration class
+    /*@Bean
     FakeDataSource fakeDataSource(@Value("${guru.username}") String username,
                                   @Value("${guru.password}")String password,
                                   @Value("${guru.jdbcurl}")String jdbcurl){
@@ -79,5 +80,15 @@ public class GreetingServiceConfig {
         fakeDataSource.setPassword(password);
         fakeDataSource.setJdbcurl(jdbcurl);
         return fakeDataSource;
+
+     */
+
+    @Bean
+    FakeDataSource fakeDataSource(SfgConfiguration sfgConfiguration){
+            FakeDataSource fakeDataSource = new FakeDataSource();
+            fakeDataSource.setUsername(sfgConfiguration.getUsername());
+            fakeDataSource.setPassword(sfgConfiguration.getPassword());
+            fakeDataSource.setJdbcurl(sfgConfiguration.getJdbcurl());
+            return fakeDataSource;
     }
 }
