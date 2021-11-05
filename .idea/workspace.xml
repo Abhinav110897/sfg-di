@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed6ae523-646a-48b1-90bb-3dbb7cdde8c2" name="Changes" comment="Adding a prod profile to application.yml">
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/config/SfgConfiguration.java" afterDir="false" />
+    <list default="true" id="ed6ae523-646a-48b1-90bb-3dbb7cdde8c2" name="Changes" comment="Adding properties binding in SfgConfiguration class.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/config/SfgConstructorConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/SfgDiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/SfgDiApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/config/GreetingServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/sfgdi/config/GreetingServiceConfig.java" afterDir="false" />
@@ -151,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636102992049</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adding properties binding in SfgConfiguration class.">
+      <created>1636103954085</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1636103954085</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +181,7 @@
     <MESSAGE value="Replacing application.properties with application.yml" />
     <MESSAGE value="Replacing application-dev.properties and application-qa.properties with application-dev.yml and application-qa.yml" />
     <MESSAGE value="Adding a prod profile to application.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding a prod profile to application.yml" />
+    <MESSAGE value="Adding properties binding in SfgConfiguration class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding properties binding in SfgConfiguration class." />
   </component>
 </project>

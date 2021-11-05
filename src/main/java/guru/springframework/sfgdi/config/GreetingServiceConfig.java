@@ -7,8 +7,10 @@ import guru.springframework.sfgdi.repositories.EnglishGreetingRepository;
 import guru.springframework.sfgdi.repositories.EnglishGreetingRepositoryImpl;
 import guru.springframework.sfgdi.services.*;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.*;
 
+@EnableConfigurationProperties(SfgConstructorConfig.class)
 //@PropertySource("classpath:datasource.properties") using application.properties instead
 @ImportResource("classpath:sfgdi-config.xml")
 @Configuration
@@ -83,12 +85,23 @@ public class GreetingServiceConfig {
 
      */
 
-    @Bean
+    //commenting to change to constructor config
+    /*@Bean
     FakeDataSource fakeDataSource(SfgConfiguration sfgConfiguration){
             FakeDataSource fakeDataSource = new FakeDataSource();
             fakeDataSource.setUsername(sfgConfiguration.getUsername());
             fakeDataSource.setPassword(sfgConfiguration.getPassword());
             fakeDataSource.setJdbcurl(sfgConfiguration.getJdbcurl());
             return fakeDataSource;
+
+     */
+    @Bean
+    FakeDataSource fakeDataSource(SfgConstructorConfig sfgConstructorConfig){
+        FakeDataSource fakeDataSource = new FakeDataSource();
+        fakeDataSource.setUsername(sfgConstructorConfig.getUsername());
+        fakeDataSource.setPassword(sfgConstructorConfig.getPassword());
+        fakeDataSource.setJdbcurl(sfgConstructorConfig.getJdbcurl());
+        return fakeDataSource;
+
     }
 }
